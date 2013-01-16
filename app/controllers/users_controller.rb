@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    #Deriving User from ActiveRecord allows to use method "all" to get all users
+    # Deriving User from ActiveRecord allows to use method "all" to get all users
+    # instance variables are starting with @, they are automatically available in the view (xxx.html.erb)
     @users = User.all
 
     respond_to do |format|
